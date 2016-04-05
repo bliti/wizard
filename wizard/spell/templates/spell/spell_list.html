@@ -1,7 +1,7 @@
 <h1>The wizard's list of magical spells</h1>
 <ul>
 {% for spell in object_list %}
-    <li><p><em>{{ spell.created|date }}</em></p> <p>{{ spell.content }}</p></li>
+    <li><p><em>{{ spell.created|date:"D d M Y h:i a" }}</em></p> <p>{{ spell.content }}</p></li>
 {% empty %}
     <li>No spells found. Tell the wizard!</li>
 {% endfor %}

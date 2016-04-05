@@ -15,4 +15,4 @@ class Spell(models.Model):
     def __unicode__(self): return self.content
     
     class Meta:
-        ordering = ('created',)
+        ordering = ('-created',)
